@@ -1,0 +1,111 @@
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/070/315/small/geometric-low-poly-graphic-repeat-pattern-background-free-vector.jpg");
+    margin: 0%;
+}
+
+.container {
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(10, 20, 0);
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 0px;
+}
+
+.title {
+    line-height: 10vh;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+.menulijn {
+    padding-top: 1.5vh;
+    height: 3vh;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(34, 40, 40);
+    flex: 0;
+}
+
+
+
+.middenstuk {
+
+    background-color: rgb(88, 168, 182);
+    border-color: black;
+    border: solid;
+    border-radius: 3px;
+    padding: 0px;
+    overflow: auto;
+    flex: 1;
+}
+
+
+.onderkant {
+    text-align: right;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+    color: white;
+}
+
+.open {
+    flex: 1;
+    transition: 0.6s;
+
+}
+
+.close {
+    flex: 0;
+    overflow: hidden;
+    transition: 0.6s;
+
+}
+
+.popupContent {
+    background-color: rgb(255, 255, 255);
+    height: 175px;  
+    width: 250px;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    padding: 0px;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    transition: left 0, 8;
+
+}
+
+.backgroundpop {
+    display: none;
+    background-color: rgba(46, 52, 59, 0.6);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.backgroundpop.open {
+    display: block;
+    
+}
+.popupblue{
+    background-color: rgb(107, 184, 184)
+}
+.popupred{
+    background-color: rgb(172, 52, 52)
+}
